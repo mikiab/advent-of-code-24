@@ -7,3 +7,4 @@ edition = "2021"
 aoc-runner = "0.3.0"
 aoc-runner-derive = "0.3.0"
 indoc = "2.0.5"
+smallvec = { version = "1.13.2", features = ["const_new", "const_generics", "union"] }
