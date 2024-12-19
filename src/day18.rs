@@ -83,7 +83,7 @@ struct Vertex(usize, u16);
 
 impl Ord for Vertex {
     fn cmp(&self, other: &Self) -> Ordering {
-        other.1.cmp(&self.1).then_with(|| self.0.cmp(&other.0))
+        other.1.cmp(&self.1).then_with(|| other.0.cmp(&self.0))
     }
 }
 
